@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+  width: 100svw;
+}
+
+body {
+  display: flex;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.sidebar {
+  position: relative;
+  min-width: 30%;
+  padding: 2.5rem;
+  background-color: #DDC3A5;
+}
+.sidebar .site-title {
+  font-size: calc(1.5rem + 1.5vw);
+  font-weight: 700;
+  text-align: center;
+  color: #201E20;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.sidebar .form-container {
+  margin-top: 10%;
+  padding: 1.5rem;
+  border: 0.15rem solid #201E20;
+  border-radius: 5%;
+  color: #201E20;
+}
+.sidebar .form-container .add-book-text {
+  font-size: calc(0.7rem + 0.7vw);
+  font-weight: 700;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.sidebar .form-container form {
+  display: grid;
+  row-gap: 1rem;
+  font-size: calc(0.75rem + 0.5vw);
+}
+.sidebar .form-container form .form-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+.sidebar .form-container form .form-item label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.sidebar .form-container form .form-item input {
+  width: 75%;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+.sidebar .form-container form .form-item button {
+  font-size: calc(0.75rem + 0.5vw);
+  font-weight: 500;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  background-color: #201E20;
+  width: 20%;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.sidebar .form-container form .form-item button:active {
+  transform: scale(0.96);
+}
+.sidebar .form-container form .checkbox-item {
+  flex-direction: row;
+}
+.sidebar .form-container form .checkbox-item label {
+  margin-bottom: 0.2rem;
+}
+.sidebar .form-container form .checkbox-item label:hover {
+  cursor: pointer;
+}
+.sidebar .form-container form .checkbox-item input[type=checkbox] {
+  width: 10%;
+  accent-color: #201E20;
+}
+.sidebar .form-container form .checkbox-item input[type=checkbox]:hover {
+  cursor: pointer;
+}
+.sidebar .footer {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.75rem + 0.5vw);
+  font-weight: 500;
+  position: absolute;
+  background-color: #201E20;
+  color: white;
+  padding: 1rem 0;
+}
+.sidebar .footer i {
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.main {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFF7E8;
+  padding: 2.5rem;
+}
+.main .library-title {
+  font-size: calc(1.5rem + 1.5vw);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.main .action-buttons {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.main .action-buttons button {
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 500;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  background-color: #201E20;
+  width: 20%;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.main .action-buttons button:active {
+  transform: scale(0.96);
+}
+.main .action-buttons .delete-all-btn:active {
+  background-color: red;
+}
+.main .table-container {
+  width: 90%;
+}
+.main .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.15);
+}
+.main .table-container table th,
+.main .table-container table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+.main .table-container table thead tr {
+  background-color: #DDC3A5;
+  color: #ffffff;
+}
+.main .table-container table tbody {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+.main .table-container table tbody tr {
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+.main .table-container table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.main .table-container table tbody tr:last-of-type {
+  border-bottom: 0.2rem solid #DDC3A5;
+}
+.main .table-container table tbody tr:hover {
+  color: #DDC3A5;
+}
+.main .table-container table tbody tr td:last-of-type {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

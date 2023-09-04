@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+// Font styles
+$main-font: 'IBM Plex Sans', sans-serif;
+$secondary-font: 'IBM Plex Sans Condensed', sans-serif;
+
+// Font weights
+$heavy: 700;
+$normal: 500;
+$light: 400;
+
+// Font Sizes
+$large-text: calc(1.5rem + 1.5vw);
+$medium-text: calc(0.7rem + 0.7vw);
+$small-text: calc(0.75rem + 0.5vw);
+$smallest-text: calc(0.5rem + 0.5vw);
+
+// Colors
+$beige: #DDC3A5;
+$faint-black: #201E20;
+$tan: #E0A96D;
+$off-white: #FFF7E8;

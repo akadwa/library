@@ -1,0 +1,42 @@
+@mixin bottom-stick {
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin size-weight($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin shadow-effect {
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+@mixin click-effect {
+  cursor: pointer;
+  transition: 0.2s all;
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+@mixin button-styling($font, $color, $bg-color) {
+  font-family: $font;
+  color: $color;
+  background-color: $bg-color;
+  width: 20%;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+}
